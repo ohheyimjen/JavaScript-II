@@ -71,12 +71,18 @@ console.log(multiplyNums(5, 4, times));
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
-  return cb(list.includes(item));
+  for(i = 0; i < list.length; i++) {
+    if(list[i] = item) {
+      return cb = true;
+    }
+  }
+  return false;
 }
 
-contains(list, function(item) {
-  console.log(list.includes(item));
-}
+contains('pencil', items, function(flag) {
+  console.log(flag);
+});
+
 
 /* STRETCH PROBLEM */
 
