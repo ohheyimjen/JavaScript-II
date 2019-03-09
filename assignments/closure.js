@@ -1,5 +1,17 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function dogWalk() {
+  let dog = 'Lucha';
+  function peed() {
+    console.log(`${dog} emptied his/her bladder!`)
+  }
+  peed();
+  function pooped() {
+    console.log(`${dog} cleared the chute!`);
+  }
+  pooped();
+}
+console.log(dogWalk());
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
